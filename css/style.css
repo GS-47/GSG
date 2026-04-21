@@ -112,4 +112,58 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
+    /* =========================
+   MOBILE OPTIMIZATION
+========================= */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #b10000;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Hamburger button */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 1.5em;
+        padding: 10px;
+    }
+
+    main.content {
+        margin: 20px 10px;
+        padding: 30px 15px;
+    }
+
+    .image-section img.main-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Hide hamburger on desktop */
+.menu-toggle {
+    display: none;
+}
 }
